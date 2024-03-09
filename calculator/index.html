@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basic Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="info-section">
+            <h2>About Me</h2>
+            <p>
+                I am Smita Pawar, a dedicated student pursuing a Masters in Computer Application. Currently, I am a part of the CODESOFT internship program, where I have embraced the role of a web developer intern. This calculator project marks my third task, a culmination of my journey in honing my skills with CSS, HTML, and JavaScript. The design approach I adopted is deliberately basic, ensuring accessibility and ease of use for a wide range of users. My goal is to create a user-friendly calculator that serves its purpose seamlessly.<br><br><br>     In my pursuit of web development excellence, I crafted this calculator as a testament to my growing skills. Its simplicity is intentional, making it an ideal tool for users from various backgrounds. As part of the CODESOFT internship, I am continually learning and applying my knowledge to practical projects. This calculator, designed with CSS, HTML, and JavaScript, represents a milestone in my journey as a web developer. I hope that this user-friendly design allows individuals to effortlessly navigate and leverage its functionalities. Thank you for exploring this project with me!
+            </p>
+        </div>
+
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        
+        <button onclick="operate('+')">+</button>
+        <button onclick="operate('-')">-</button>
+        <button onclick="operate('*')">*</button>
+        <button onclick="operate('/')">/</button>
+        
+        <button onclick="calculate()" class="equal">=</button>
+        
+        <!-- Move clear and backspace buttons beside the equal button -->
+        <div class="clear-backspace">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="backspace()" class="backspace">⌫</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Owner - Smita Pawar | Web Development Internship  | Level - 1 (Task 3)</p>
+    </footer>
+</body>
+</html>

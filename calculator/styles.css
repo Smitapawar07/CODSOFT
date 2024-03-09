@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+    .info-section {
+        flex: 1;
+        padding: 20px;
+        font-family: 'Times New Roman', serif; /* Change the font-family */
+    }
+
+
+.info-section h2 {
+    color: #333;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    max-width: 400px; /* Increase the max-width */
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #333;
+    color: #fff;
+    padding: 20px; /* Increase the padding */
+    text-align: right;
+    font-size: 2em; /* Increase the font size */
+}
+
+button {
+    padding: 20px; /* Increase the padding */
+    font-size: 1.5em; /* Increase the font size */
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button.operator {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+button.operator:hover {
+    background-color: #d48915;
+}
+
+button.equal {
+    grid-column: span 2; /* Make the equals button span two columns */
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button.equal:hover {
+    background-color: #45a049;
+}
+
+/* Style for the backspace button */
+button.backspace {
+    background-color: #ff5c5c;
+    color: #fff;
+}
+
+button.backspace:hover {
+    background-color: #e65252;
+}
+
+/* Style for the clear button */
+button.clear {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button.clear:hover {
+    background-color: #2980b9;
+}
+
+/* Style for the clear and backspace buttons container */
+.clear-backspace {
+    grid-column: span 2; /* Make the container span two columns */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
